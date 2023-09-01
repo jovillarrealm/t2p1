@@ -1,0 +1,31 @@
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js" integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N" crossorigin="anonymous"></script>         <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.min.js" integrity="sha384-heAjqF+bCxXpCWLa6Zhcp4fu20XoNIA98ecBC1YkdXhszjoejr5y9Q77hIrv8R9i" crossorigin="anonymous"></script>         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+<https://teams.microsoft.com/l/message/19:0e391c676bb94e22a5e8d353c1ce18a0@thread.tacv2/1692889243816?tenantId=99f7b55e-9cbe-467b-8143-919782918afb&amp;groupId=f801c430-a907-402b-9875-16830076a998&amp;parentMessageId=1692889243816&amp;teamName=ST0251_2908_2366_PROYECTO INTEGRADOR 1&amp;channelName=Semana 6&amp;createdTime=1692889243816&amp;allowXTenantAccess=false>
+<div class="container">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Movies with search ☆*: .｡. o(≧▽≦)o .｡.:*☆</title>
+      </head>
+    
+    <form action="">
+    <div class="mb-3">
+        <label>
+            Search for movie:
+        </label>
+        <input type="text" class="form-control" name="searchMovie"/>
+    </div>
+    </form>
+    Searching for {{searchTerm}}
+
+    {% for movie in movies %}
+        <h2>{{ movie.title }}</h2>
+        <h3>{{ movie.description }}</h3>
+        <img src="{{ movie.image.url }}">
+        {% if movie.url %}
+        <a href="{{movie.url}}"> Link </a>
+        {% endif %}
+    {% endfor %}
+    <br />
+    <br />
+</div>
